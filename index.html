@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>M.Eswar Lakshmi Narasayya</h1>
+        </div>
+        <p class="tagline">Aspiring Web Developer & Designer</p>
+    </header>
+
+    <section id="about">
+        <img src="https://res.cloudinary.com/djw3g0ro8/image/upload/v1721200359/pic_zeybdd_c_crop_ar_1_1_n9wmjt.jpg" alt="Your Name" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and a bit of backend development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Version Control (Git)</li>
+            <li>Basic Python</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <img src="assets/images/project1-image.jpg" alt="Business Page Project">
+            <h3>Business Page with Multiple Services</h3>
+            <p>This project involved creating a business landing page that showcases multiple services offered by a company. The page features sections for each service, with custom icons, descriptions, and a responsive layout. I used HTML, CSS, and some JavaScript for interactivity.</p>
+        </div>
+        
+        <div class="project">
+            <img src="assets/images/project2-image.jpg" alt="Portfolio Project">
+            <h3>Personal Portfolio with Resume Download</h3>
+            <p>This portfolio project (the one you're currently viewing) is a showcase of my work and skills. It includes a downloadable resume feature, responsive design, and a clean, modern layout. The site is built using HTML, CSS, and is fully responsive across devices.</p>
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>email: eswarmukku2176@gmail.com</p>
+        <p>Phone: +91 6281213262</p>
+    </section>
+    <script>
+document.getElementById('downloadBtn').addEventListener('click', function(e) {
+    e.preventDefault(); 
+
+    const downloadBtn = this;
+    
+    downloadBtn.classList.add('download-animate');
+
+    setTimeout(() => {
+        window.location.href = downloadBtn.href;
+
+        downloadBtn.classList.remove('download-animate');
+    }, 400);
+});
+
+
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Eswar MUkku. All rights reserved.</p>
+        <a href="#about">Back to top</a>
+    </footer>
+</body>
+</html>
